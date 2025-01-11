@@ -1,1 +1,1 @@
-# -Data-Structures-and-Algorithms-I-Sessional
+# Data-Structures-and-Algorithms-I-Sessional
