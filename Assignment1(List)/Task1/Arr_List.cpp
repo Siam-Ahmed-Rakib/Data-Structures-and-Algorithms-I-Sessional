@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 template <typename T>
@@ -10,12 +10,16 @@ class List
     int current_position;
 
 public:
-    void init(int length, int chunksize = 100)
+    void init(int length, int chunksize ,T* a)
     {
         this->list_length = length;
         this->chunksize = chunksize;
         arr = new T[chunksize];
         current_position = 0;
+        for (int i = 0; i < length; i++)
+        {
+            arr[i] = a[i];
+        }
     }
     void insert(T item)
     {

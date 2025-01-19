@@ -6,9 +6,9 @@ class ExtendedList
     List<T> list;
 
 public:
-    ExtendedList(int length, int chunksize)
+    ExtendedList(int length, int chunksize, T *a)
     {
-        list.init(length, chunksize);
+        list.init(length, chunksize, a);
     }
     void clear()
     {
@@ -65,14 +65,13 @@ int main()
 {
     int K, X;
     cin >> K >> X;
-    ExtendedList<int> list(0, X);
-
-    int el;
-    for (int i = 0; i < K; i++)
+    int a[K];
+    for(int i = 0; i < K; i++)
     {
-        cin >> el;
-        list.append(el);
+        cin >> a[i];
     }
+
+    ExtendedList<int> list(K, X, a);
     cout << "1. Append\n2. Search\n3. Clear\n0. Exit\n";
     int x;
     while (true)

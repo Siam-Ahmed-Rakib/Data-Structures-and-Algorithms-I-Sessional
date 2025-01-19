@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 template <typename T>
@@ -21,11 +21,26 @@ class List
     int current_position;
 
 public:
-    void init(int length, int X = 100)
+    void init(int length, int X  ,T* a)
     {
-        this->list_length = 0;
+        this->list_length = length;
         head = NULL;
         current_position = 0;
+        LinkedList<T> *temp = head;
+        for (int i = 0; i < length; i++)
+        {
+            LinkedList<T> *newNode = new LinkedList<T>(a[i]);
+            if (head == NULL)
+            {
+                head = newNode;
+                temp = head;
+            }
+            else
+            {
+                temp->next = newNode;
+                temp = temp->next;
+            }
+        }
     }
 
     void insert(T item)

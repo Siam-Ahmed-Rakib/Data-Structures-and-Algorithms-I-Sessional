@@ -1,5 +1,6 @@
-#include "Arr_List.cpp"
-// #include "LL_List.cpp"
+// #include "Arr_List.cpp"
+#include "LL_List.cpp"
+#include <sstream>
 class CRS
 {
     List<List<int>> garage;
@@ -11,16 +12,28 @@ public:
         NumOfCars = X;
         NumberOfGarages = Y;
         GarageSize = Z;
-        //garage.init(Y);
-        garage.init(0, Y);
+        // garage.init(Y);
+        garage.init(0, Y, nullptr);
+
         for (int i = 0; i < Y; i++)
+
         {
+
             List<int> cars;
-            cars.init(0, Z);
+
+            cars.init(0, Z, nullptr);
+
             garage.insert(cars);
         }
-        cin.ignore();
 
+        // for (int i = 0; i < Y; i++)
+        // {
+        //     List<int> cars;
+        //     cars.init(0, Z);
+        //     garage.insert(cars);
+        // }
+        cin.ignore();
+        // int G[Y];
         for (int i = 0; i < Y; i++)
         {
             string s;
@@ -131,12 +144,11 @@ public:
                     garage.remove();
                     garage.insert(cars);
                 }
-                NumberOfGarages--;
+                NumOfCars--;
                 return;
             }
         }
     }
-
     void ret(int num)
     {
 
@@ -164,6 +176,8 @@ public:
                         }
                         cars.next();
                     }
+                    cout << mi << endl;
+                    cout << cars.length() << endl;
                     if (mi == cars.length() - 1)
                     {
                         cars.moveToEnd();
@@ -192,10 +206,11 @@ public:
                 }
                 else
                 {
+                    garage.moveToPos(i);
                     garage.remove();
                     garage.insert(cars);
                 }
-                NumberOfGarages++;
+                NumOfCars++;
                 return;
             }
         }

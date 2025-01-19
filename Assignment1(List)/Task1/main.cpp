@@ -5,28 +5,13 @@ int main()
     List<int> list;
     int K, X;
     cin >> K >> X;
-    list.init(0, X);
-    int el;
-    for (int i = 0; i < K; i++)
+    int a[K];
+    for(int i = 0; i < K; i++)
     {
-        cin >> el;
-        if (list.length() == 0)
-        {
-            list.insert(el);
-        }
-        else
-        {
-            int pos = list.currPos();
-            list.moveToEnd();
-            int x = list.getValue();
-            list.insert(el);
-            list.next();
-            list.remove();
-            list.insert(x);
-            list.moveToPos(pos);
-        }
+        cin >> a[i];
     }
-    list.moveToStart();
+
+    list.init(K, X, a);
     int x;
     list.print();
     cout << "1. Insert\n2. Remove\n3. Move to Start\n4. Move to End\n5. Previous\n6. Next\n7. Length\n8. Current Position\n9. Move to Position\n10. Get Value\n0. Exit\n";
