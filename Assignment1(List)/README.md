@@ -15,7 +15,7 @@ Mainly implementing the List data structure with the following functions:
 9. `moveToPos(int pos)` - Set current position.
 10. `getValue()` - Return the current element.
 
-These functions are implemented in two types: using Array and using Linked List. The solutions for Task 1 are in the [Arr_List.cpp](Arr_List.cpp), [LL_List.cpp](LL_List.cpp), and [main.cpp](main.cpp) files.
+These functions are implemented in two types: using Array and using Linked List. The solutions for Task 1 are in the [Arr_List.cpp](Arr_List.cpp)(Array based Implementation), [LL_List.cpp](LL_List.cpp)(Linked List based Implementation), and [main.cpp](main.cpp)(The main File to check the functionalities) files.
 
 ## Task 2
 Adding some extra features to the List with the following functions:
@@ -26,9 +26,11 @@ Adding some extra features to the List with the following functions:
 The solution for Task 2 is in the [Task2.cpp](Task2.cpp) file.
 
 ## Task 3
-You have to manage a car rental system (CRS) with X cars and Y garages. Each garage can park Z cars. When a rental request comes, assign a car from the least labeled non-empty garage. When a car returns, park it in the highest labeled non-full garage. If no cars are available or all garages are full, give a message accordingly. The solution for Task 3 is in the [Task3.cpp](Task3.cpp) file.
+A real-life problem using the List where I have to manage a car rental system (CRS) with X cars and Y garages. Each garage can park Z cars. When a rental request comes, I have to assign a car from the least labeled non-empty garage. When a car returns, park it in the highest labeled non-full garage. If no cars are available or all garages are full, give a message accordingly. The solution for Task 3 is in the [Task3.cpp](Task3.cpp) file.
 
 ## Additional Problems
 There are also 3 additional problems using List in the [Online2A1_A2.pdf](Online2A1_A2.pdf), [Online2B1_B2.pdf](Online2B1_B2.pdf), and [Online2C1_C2.pdf](Online2C1_C2.pdf). The solutions for these are in the [Online2_A.cpp](Online2_A.cpp), [Online2_B.cpp](Online2_B.cpp), and [Online2_C.cpp](Online2_C.cpp) files.
+
+To solve the problems in Task 3 of [Assignment1.pdf](Assignment1.pdf), [Online2A1_A2.pdf](Online2A1_A2.pdf), [Online2B1_B2.pdf](Online2B1_B2.pdf), and [Online2C1_C2.pdf](Online2C1_C2.pdf), I use my implemented List ([Arr_List.cpp](Arr_List.cpp), [LL_List.cpp](LL_List.cpp)) as a header file as they need a list and I am bound to not use STL. At a time, I can comment out only one of the header files as they are identical without using Array or Linked List.
 
 **Mind it, using STL is strongly prohibited for better understanding, and I have adhered to this rule.**
