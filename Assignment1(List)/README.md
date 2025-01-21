@@ -15,7 +15,7 @@ Mainly implementing the List data structure with the following functions:
 9. `moveToPos(int pos)` - Set current position.
 10. `getValue()` - Return the current element.
 
-These functions are implemented in two types: using Array and using Linked List. The solutions for Task 1 are in the [Arr_List.cpp](Arr_List.cpp)(Array based Implementation), [LL_List.cpp](LL_List.cpp)(Linked List based Implementation), and [main.cpp](main.cpp)(The main File to check the functionalities) files.
+These functions are implemented in two types: using Array and using Linked List. The solutions for Task 1 are in the [Arr_List.cpp](Arr_List.cpp)(Array based Implementation), [LL_List.cpp](LL_List.cpp)(Linked List based Implementation), and [main.cpp](main.cpp)(The main File to check the functionalities of the List) files.
 
 ## Task 2
 Adding some extra features to the List with the following functions:
@@ -31,6 +31,7 @@ A real-life problem using the List where I have to manage a car rental system (C
 ## Additional Problems
 There are also 3 additional problems using List in the [Online2A1_A2.pdf](Online2A1_A2.pdf), [Online2B1_B2.pdf](Online2B1_B2.pdf), and [Online2C1_C2.pdf](Online2C1_C2.pdf). The solutions for these are in the [Online2_A.cpp](Online2_A.cpp), [Online2_B.cpp](Online2_B.cpp), and [Online2_C.cpp](Online2_C.cpp) files.
 
-To solve the problems in Task 3 of [Assignment1.pdf](Assignment1.pdf), [Online2A1_A2.pdf](Online2A1_A2.pdf), [Online2B1_B2.pdf](Online2B1_B2.pdf), and [Online2C1_C2.pdf](Online2C1_C2.pdf), I use my implemented List ([Arr_List.cpp](Arr_List.cpp), [LL_List.cpp](LL_List.cpp)) as a header file as they need a list and I am bound to not use STL. At a time, I can comment out only one of the header files as they are identical without using Array or Linked List.
+## Extra Info
+To solve the problems in Task 3 of [Assignment1.pdf](Assignment1.pdf), [Online2A1_A2.pdf](Online2A1_A2.pdf), [Online2B1_B2.pdf](Online2B1_B2.pdf), and [Online2C1_C2.pdf](Online2C1_C2.pdf), I use my implemented List ([Arr_List.cpp](Arr_List.cpp), [LL_List.cpp](LL_List.cpp)) as a header file as they need a list and I am bound to not use STL. At a time, you can comment out only one of the header files as they are identical except for using Array or Linked List.
 
 **Mind it, using STL is strongly prohibited for better understanding, and I have adhered to this rule.**
