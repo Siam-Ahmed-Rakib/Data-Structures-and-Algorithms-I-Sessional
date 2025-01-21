@@ -32,6 +32,6 @@ A real-life problem using the List where I have to manage a car rental system (C
 There are also 3 additional problems using List in the [Online2A1_A2.pdf](Online2A1_A2.pdf), [Online2B1_B2.pdf](Online2B1_B2.pdf), and [Online2C1_C2.pdf](Online2C1_C2.pdf). The solutions for these are in the [Online2_A.cpp](Online2_A.cpp), [Online2_B.cpp](Online2_B.cpp), and [Online2_C.cpp](Online2_C.cpp) files.
 
 ## Extra Info
-To solve the problems in Task 3 of [Assignment1.pdf](Assignment1.pdf), [Online2A1_A2.pdf](Online2A1_A2.pdf), [Online2B1_B2.pdf](Online2B1_B2.pdf), and [Online2C1_C2.pdf](Online2C1_C2.pdf), I use my implemented List ([Arr_List.cpp](Arr_List.cpp), [LL_List.cpp](LL_List.cpp)) as a header file as they need a list and I am bound to not use STL. At a time, you can comment out only one of the header files as they are identical except for using Array or Linked List.
+To solve the problems in Task2,Task 3 of [Assignment1.pdf](Assignment1.pdf), [Online2B1_B2.pdf](Online2B1_B2.pdf), and [Online2C1_C2.pdf](Online2C1_C2.pdf), I use my implemented List ([Arr_List.cpp](Arr_List.cpp), [LL_List.cpp](LL_List.cpp)) as a header file as they need a list and I am bound to not use STL. At a time, you can comment out only one of the header files as they are identical except for using Array or Linked List.
 
 **Mind it, using STL is strongly prohibited for better understanding, and I have adhered to this rule.**

@@ -1,4 +1,5 @@
 #include "LL_List.cpp"
+// #include "Arr_List.cpp"
 bool same(List<char> A, int n)
 {
     int i = 0, j = n - 1;
